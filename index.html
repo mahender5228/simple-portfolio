@@ -1,460 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Mahender Bhambhu – AI/ML Engineer & Full Stack Developer. IEEE-published researcher. MERN, Next.js, Python, Cloud." />
-    <title>Mahender Bhambhu | AI/ML Engineer & Full Stack Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
 
-    <!-- LOADER -->
-    <div id="loader">
-      <div class="loader-content">
-        <div class="loader-car">🚙</div>
-        <div class="loader-text">Loading the journey<span class="dots"></span></div>
-        <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-        <p class="loader-sub">Mahender Bhambhu · India Road Trip Portfolio</p>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mahender Bhambhu – AI/ML Engineer & Full Stack Developer. IEEE-published researcher. MERN, Next.js, Python, Cloud." />
+  <title>Mahender Bhambhu | AI/ML Engineer & Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-car">🚙</div>
+      <div class="loader-text">Loading the journey<span class="dots"></span></div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <p class="loader-sub">Mahender Bhambhu · India Road Trip Portfolio</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-brand"><span class="nav-icon">🚙</span><span>MB</span></div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-cta"><a href="#contact" class="btn-hire">Hire Me</a></div>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+
+
+  <!-- THREE.JS CANVAS -->
+  <canvas id="threeCanvas"></canvas>
+
+  <section id="hero" class="journey-section section-kashmir">
+    <div class="section-overlay"></div>
+    <div class="hero-content reveal-up">
+      <div class="location-tag"><span class="location-dot"></span>The Beginning</div>
+      <h1 class="hero-title">Mahender<br /><span class="hero-gradient">Bhambhu</span></h1>
+      <p class="hero-subtitle">AI/ML Engineer · Full Stack Developer · IEEE Researcher</p>
+      <p class="hero-desc">Building high-performance web apps and publishing ML research that bridges mechanistic crop
+        simulations with deep learning. Let's ride across India together.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn-primary"><span>Start the Journey</span><span>🚙</span></a>
+        <a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank"
+          class="btn-secondary"><span>LinkedIn</span><span>→</span></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Yrs Exp</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">IEEE Papers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Certifications</span></div>
       </div>
     </div>
+  </section>
 
-    <!-- NAVBAR -->
-    <nav id="navbar">
-      <div class="nav-brand"><span class="nav-icon">🚙</span><span>MB</span></div>
-      <div class="nav-links">
-        <a href="#hero" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
+  <section id="about" class="journey-section section-coast">
+    <div class="section-overlay"></div>
+    <div class="section-content reveal-up">
+      <div class="location-tag"><span class="location-dot"></span>📍 Who am I?</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">About <span class="gradient-text">Me</span></h2>
+          <p class="about-para">I'm <strong>Mahender Bhambhu</strong> — an AI/ML Engineer and Full Stack Developer with
+            a proven track record of translating complex, data-driven research into impactful technology. Currently
+            pursuing my <strong>M.Eng in AI/ML</strong> at Chandigarh University.</p>
+          <p class="about-para">I have hands-on experience at <strong>Azikya Software Solution Pvt. Ltd.,
+              Faridabad</strong>, building e-commerce solutions with MERN stack, integrating Stripe payments, and
+            deploying scalable cloud apps on AWS.</p>
+          <p class="about-para">Beyond code, I author <strong>IEEE-submitted research papers</strong> on multimodal deep
+            learning for agriculture — achieving a record 4.19 q/ha RMSE with ClimYieldNet, my novel spatial-temporal
+            deep learning architecture.</p>
+          <div class="about-badges">
+            <span class="badge">🎓 M.Eng AI/ML – Chandigarh University</span>
+            <span class="badge">🎓 B.Eng CS – Chandigarh University</span>
+            <span class="badge">💼 Full Stack Dev @ Azikya</span>
+            <span class="badge">📄 IEEE Researcher</span>
+            <span class="badge">🌍 Hisar, India</span>
+          </div>
+        </div>
+        <div class="about-card-wrap">
+          <div class="about-card">
+            <div class="about-avatar">MB</div>
+            <h3>Mahender Bhambhu</h3>
+            <p>AI/ML Engineer · Full Stack Dev</p>
+            <div class="about-links">
+              <a href="https://rentmyextras.shop/" target="_blank" class="about-link">RentMyExtras</a>
+              <a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank"
+                class="about-link">LinkedIn</a>
+            </div>
+            <div class="about-fact-row">
+              <div class="about-fact"><span class="fact-icon">📍</span><span>Hisar, HR</span></div>
+              <div class="about-fact"><span class="fact-icon">📧</span><span>bhambhu27@gmail.com</span></div>
+              <div class="about-fact"><span class="fact-icon">📞</span><span>+91 9872687150</span></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="nav-cta"><a href="#contact" class="btn-hire">Hire Me</a></div>
-      <button class="nav-toggle" id="navToggle">☰</button>
-    </nav>
-    <div class="mobile-nav" id="mobileNav">
-      <a href="#hero" class="mobile-nav-link">Home</a>
-      <a href="#about" class="mobile-nav-link">About</a>
-      <a href="#skills" class="mobile-nav-link">Skills</a>
-      <a href="#experience" class="mobile-nav-link">Experience</a>
-      <a href="#projects" class="mobile-nav-link">Projects</a>
-      <a href="#contact" class="mobile-nav-link">Contact</a>
     </div>
+  </section>
 
-    <!-- ROAD PROGRESS -->
-    <div class="road-progress" id="roadProgress">
-      <div class="road-fill" id="roadFill"></div>
-      <div class="road-car-indicator" id="roadCarIndicator">🚙</div>
+  <section id="skills" class="journey-section section-kanyakumari">
+    <div class="section-overlay"></div>
+    <div class="section-content reveal-up">
+      <div class="location-tag"><span class="location-dot"></span>📍 Where three Seas Meet</div>
+      <h2 class="section-heading">Technical <span class="gradient-text">Skills</span></h2>
+      <p class="section-sub">Multiple technologies converging — just like the three seas at the tip of India.</p>
+      <div class="skills-universe">
+        <div class="skill-category">
+          <h3 class="cat-title">⚡ Frontend</h3>
+          <div class="skills-row">
+            <div class="skill-pill" style="--delay:0.1s">React.js</div>
+            <div class="skill-pill" style="--delay:0.2s">Next.js</div>
+            <div class="skill-pill" style="--delay:0.3s">HTML5 / CSS3</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="cat-title">🔧 Backend</h3>
+          <div class="skills-row">
+            <div class="skill-pill" style="--delay:0.0s">Node.js</div>
+            <div class="skill-pill" style="--delay:0.1s">RESTful APIs</div>
+            <div class="skill-pill" style="--delay:0.3s">SQL / MongoDB</div>
+            <div class="skill-pill" style="--delay:0.4s">Firebase</div>
+            <div class="skill-pill" style="--delay:0.1s">Docker</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="cat-title">🤖 AI / ML</h3>
+          <div class="skills-row">
+            <div class="skill-pill" style="--delay:0.0s">Python</div>
+            <div class="skill-pill" style="--delay:0.1s">Deep Learning</div>
+            <div class="skill-pill" style="--delay:0.2s">ML / DL</div>
+            <div class="skill-pill" style="--delay:0.3s">Data Fusion</div>
+            <div class="skill-pill" style="--delay:0.4s">Jupyter</div>
+            <div class="skill-pill" style="--delay:0.5s">R Language</div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
     </div>
-    <div class="milestones" id="milestones">
-      <div class="milestone" data-section="0">🏔️ Kashmir</div>
-      <div class="milestone" data-section="1">🌊 West Coast</div>
-      <div class="milestone" data-section="2">🌅 Kanyakumari</div>
-      <div class="milestone" data-section="3">🌿 North East</div>
-    </div>
+  </section>
 
-    <!-- THREE.JS CANVAS -->
-    <canvas id="threeCanvas"></canvas>
+  <!-- ── SECTION 4: EXPERIENCE / NORTH EAST ── -->
+  <section id="experience" class="journey-section section-northeast">
+    <div class="section-overlay"></div>
+    <div class="section-content reveal-up">
+      <div class="location-tag"><span class="location-dot"></span>📍 North East India — Where Stories Grow</div>
+      <h2 class="section-heading">Experience & <span class="gradient-text">Education</span></h2>
+      <div class="timeline">
 
-    <!-- ── SECTION 1: HERO / KASHMIR ── -->
-    <section id="hero" class="journey-section section-kashmir">
-      <div class="section-overlay"></div>
-      <div class="hero-content reveal-up">
-        <div class="location-tag"><span class="location-dot"></span>📍 Kashmir, India — The Beginning</div>
-        <h1 class="hero-title">Mahender<br/><span class="hero-gradient">Bhambhu</span></h1>
-        <p class="hero-subtitle">AI/ML Engineer · Full Stack Developer · IEEE Researcher</p>
-        <p class="hero-desc">Building high-performance web apps and publishing ML research that bridges mechanistic crop simulations with deep learning. Let's ride across India together.</p>
-        <div class="hero-actions">
-          <a href="#about" class="btn-primary"><span>Start the Journey</span><span>🚙</span></a>
-          <a href="https://linkedin.com/in/mahender" target="_blank" class="btn-secondary"><span>LinkedIn</span><span>→</span></a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Yrs Exp</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">2</span><span class="stat-label">IEEE Papers</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Certifications</span></div>
-        </div>
-      </div>
-      <div class="scroll-hint"><span>Scroll to drive</span><div class="scroll-arrow">↓</div></div>
-    </section>
-
-    <!-- ── SECTION 2: ABOUT / WESTERN COAST ── -->
-    <section id="about" class="journey-section section-coast">
-      <div class="section-overlay"></div>
-      <div class="section-content reveal-up">
-        <div class="location-tag"><span class="location-dot"></span>📍 Western Coastal Region</div>
-        <div class="about-grid">
-          <div class="about-text">
-            <h2 class="section-heading">About <span class="gradient-text">Me</span></h2>
-            <p class="about-para">I'm <strong>Mahender Bhambhu</strong> — an AI/ML Engineer and Full Stack Developer with a proven track record of translating complex, data-driven research into impactful technology. Currently pursuing my <strong>M.Eng in AI/ML</strong> at Chandigarh University.</p>
-            <p class="about-para">I have hands-on experience at <strong>Azikya Software Solution Pvt. Ltd., Faridabad</strong>, building e-commerce solutions with MERN stack, integrating Stripe payments, and deploying scalable cloud apps on AWS.</p>
-            <p class="about-para">Beyond code, I author <strong>IEEE-submitted research papers</strong> on multimodal deep learning for agriculture — achieving a record 6.38 q/ha RMSE with ClimYieldNet, my novel spatial-temporal deep learning architecture.</p>
-            <div class="about-badges">
-              <span class="badge">🎓 M.Eng AI/ML – Chandigarh University</span>
-              <span class="badge">🎓 B.Eng CS – Chandigarh University</span>
-              <span class="badge">💼 Full Stack Dev @ Azikya</span>
-              <span class="badge">📄 IEEE Researcher</span>
-              <span class="badge">🌍 Faridabad, India</span>
-            </div>
-          </div>
-          <div class="about-card-wrap">
-            <div class="about-card">
-              <div class="about-avatar">MB</div>
-              <h3>Mahender Bhambhu</h3>
-              <p>AI/ML Engineer · Full Stack Dev</p>
-              <div class="about-links">
-                <a href="https://rentmyextras.shop/" target="_blank" class="about-link">RentMyExtras</a>
-                <a href="https://linkedin.com/in/mahender" target="_blank" class="about-link">LinkedIn</a>
-              </div>
-              <div class="about-fact-row">
-                <div class="about-fact"><span class="fact-icon">📍</span><span>Faridabad, HR</span></div>
-                <div class="about-fact"><span class="fact-icon">📧</span><span>bhambhu27@gmail.com</span></div>
-                <div class="about-fact"><span class="fact-icon">📞</span><span>+91 9872687150</span></div>
-              </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot">💼</div>
+          <div class="timeline-card">
+            <span class="timeline-type">Work</span>
+            <h3>Full Stack Web Developer</h3>
+            <p class="timeline-company">Azikya Software Solution Pvt. Ltd. · Faridabad</p>
+            <p class="timeline-period">Feb 2023 – Nov 2023 · Full-time</p>
+            <ul class="timeline-list">
+              <li>Executed complex e-commerce solutions for prominent clients using MERN stack and SQL</li>
+              <li>Integrated Stripe within web applications, improving transaction efficiency and UX</li>
+              <li>Developed and managed cloud applications on AWS, enhancing scalability and performance</li>
+              <li>Contributed to implementation of SQL, Next.js, and AWS across production projects</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">MERN</span><span class="ttag">Next.js</span><span class="ttag">SQL</span><span
+                class="ttag">Stripe</span><span class="ttag">AWS</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ── SECTION 3: SKILLS / KANYAKUMARI ── -->
-    <section id="skills" class="journey-section section-kanyakumari">
-      <div class="section-overlay"></div>
-      <div class="section-content reveal-up">
-        <div class="location-tag"><span class="location-dot"></span>📍 Kanyakumari — Where Three Seas Meet</div>
-        <h2 class="section-heading">Technical <span class="gradient-text">Skills</span></h2>
-        <p class="section-sub">Multiple technologies converging — just like the three seas at the tip of India.</p>
-        <div class="skills-universe">
-          <div class="skill-category">
-            <h3 class="cat-title">⚡ Frontend</h3>
-            <div class="skills-row">
-              <div class="skill-pill" style="--delay:0.0s">JavaScript</div>
-              <div class="skill-pill" style="--delay:0.1s">React.js</div>
-              <div class="skill-pill" style="--delay:0.2s">Next.js</div>
-              <div class="skill-pill" style="--delay:0.3s">HTML5 / CSS3</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3 class="cat-title">🔧 Backend</h3>
-            <div class="skills-row">
-              <div class="skill-pill" style="--delay:0.0s">Node.js</div>
-              <div class="skill-pill" style="--delay:0.1s">RESTful APIs</div>
-              <div class="skill-pill" style="--delay:0.2s">Prisma ORM</div>
-              <div class="skill-pill" style="--delay:0.3s">SQL / MySQL</div>
-              <div class="skill-pill" style="--delay:0.4s">Firebase</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3 class="cat-title">🗄️ Cloud & Tools</h3>
-            <div class="skills-row">
-              <div class="skill-pill" style="--delay:0.0s">AWS</div>
-              <div class="skill-pill" style="--delay:0.1s">Docker</div>
-              <div class="skill-pill" style="--delay:0.2s">Stripe</div>
-              <div class="skill-pill" style="--delay:0.3s">Android Studio</div>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3 class="cat-title">🤖 AI / ML</h3>
-            <div class="skills-row">
-              <div class="skill-pill" style="--delay:0.0s">Python</div>
-              <div class="skill-pill" style="--delay:0.1s">Deep Learning</div>
-              <div class="skill-pill" style="--delay:0.2s">ML / DL</div>
-              <div class="skill-pill" style="--delay:0.3s">Data Fusion</div>
-              <div class="skill-pill" style="--delay:0.4s">Jupyter</div>
-              <div class="skill-pill" style="--delay:0.5s">R Language</div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot">💼</div>
+          <div class="timeline-card">
+            <span class="timeline-type">Internship</span>
+            <h3>Web Developer Intern</h3>
+            <p class="timeline-company">Internshala · Remote</p>
+            <p class="timeline-period">Jul 2021 – Dec 2021 · Internship</p>
+            <ul class="timeline-list">
+              <li>Completed six-month internship contributing to real-world project deliverables</li>
+              <li>Collaborated with team members to meet project objectives</li>
+              <li>Applied theoretical CS knowledge to practical software engineering scenarios</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">HTML</span><span class="ttag">CSS</span><span class="ttag">JavaScript</span><span
+                class="ttag">Team Collaboration</span>
             </div>
           </div>
         </div>
-        <div class="proficiency-bars">
-          <h3 class="bars-title">Proficiency</h3>
-          <div class="bar-item">
-            <div class="bar-label"><span>JavaScript / Node.js / MERN</span><span>92%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="--pct:92%;--color:#6366f1"></div></div>
-          </div>
-          <div class="bar-item">
-            <div class="bar-label"><span>Next.js / Prisma / AWS</span><span>88%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="--pct:88%;--color:#8b5cf6"></div></div>
-          </div>
-          <div class="bar-item">
-            <div class="bar-label"><span>Python / ML / Deep Learning</span><span>90%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="--pct:90%;--color:#ec4899"></div></div>
-          </div>
-          <div class="bar-item">
-            <div class="bar-label"><span>Data Analysis / R / Visualization</span><span>80%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="--pct:80%;--color:#06b6d4"></div></div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot">🎓</div>
+          <div class="timeline-card">
+            <span class="timeline-type education">Education</span>
+            <h3>M.Eng – Artificial Intelligence & Machine Learning</h3>
+            <p class="timeline-company">Chandigarh University, Mohali, PB</p>
+            <p class="timeline-period">2023 – 2026 · Pursuing</p>
+            <ul class="timeline-list">
+              <li>Deep learning, NLP, Spatial-Temporal Modeling, Multimodal Data Fusion</li>
+              <li>Authored 2 IEEE-submitted research papers on crop yield prediction</li>
+              <li>ClimYieldNet: ResCNNs + TCNs + Attention Bi-LSTMs achieving 4.19 q/ha RMSE</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">Python</span><span class="ttag">Deep Learning</span><span class="ttag">IEEE
+                Research</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ── SECTION 4: EXPERIENCE / NORTH EAST ── -->
-    <section id="experience" class="journey-section section-northeast">
-      <div class="section-overlay"></div>
-      <div class="section-content reveal-up">
-        <div class="location-tag"><span class="location-dot"></span>📍 North East India — Where Stories Grow</div>
-        <h2 class="section-heading">Experience & <span class="gradient-text">Education</span></h2>
-        <div class="timeline">
-
-          <div class="timeline-item reveal-left">
-            <div class="timeline-dot">💼</div>
-            <div class="timeline-card">
-              <span class="timeline-type">Work</span>
-              <h3>Full Stack Web Developer</h3>
-              <p class="timeline-company">Azikya Software Solution Pvt. Ltd. · Faridabad</p>
-              <p class="timeline-period">Feb 2023 – Nov 2023 · Full-time</p>
-              <ul class="timeline-list">
-                <li>Executed complex e-commerce solutions for prominent clients using MERN stack and SQL</li>
-                <li>Integrated Stripe within web applications, improving transaction efficiency and UX</li>
-                <li>Developed and managed cloud applications on AWS, enhancing scalability and performance</li>
-                <li>Contributed to implementation of SQL, Next.js, and AWS across production projects</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="ttag">MERN</span><span class="ttag">Next.js</span><span class="ttag">SQL</span><span class="ttag">Stripe</span><span class="ttag">AWS</span>
-              </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot">🎓</div>
+          <div class="timeline-card">
+            <span class="timeline-type education">Education</span>
+            <h3>B.Eng – Computer Science & Engineering</h3>
+            <p class="timeline-company">Chandigarh University, Mohali, PB</p>
+            <p class="timeline-period">2019 – 2023 · Completed</p>
+            <ul class="timeline-list">
+              <li>Core CS fundamentals: DSA, OS, DBMS, Computer Networks</li>
+              <li>Developed full-stack projects and accident detection system during degree</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">C++</span><span class="ttag">Java</span><span class="ttag">Web Dev</span><span
+                class="ttag">DSA</span>
             </div>
           </div>
+        </div>
 
-          <div class="timeline-item reveal-right">
-            <div class="timeline-dot">💼</div>
-            <div class="timeline-card">
-              <span class="timeline-type">Internship</span>
-              <h3>Web Developer Intern</h3>
-              <p class="timeline-company">Internshala · Remote</p>
-              <p class="timeline-period">Jul 2021 – Dec 2021 · Internship</p>
-              <ul class="timeline-list">
-                <li>Completed six-month internship contributing to real-world project deliverables</li>
-                <li>Collaborated with team members to meet project objectives</li>
-                <li>Applied theoretical CS knowledge to practical software engineering scenarios</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="ttag">HTML</span><span class="ttag">CSS</span><span class="ttag">JavaScript</span><span class="ttag">Team Collaboration</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal-left">
-            <div class="timeline-dot">🎓</div>
-            <div class="timeline-card">
-              <span class="timeline-type education">Education</span>
-              <h3>M.Eng – Artificial Intelligence & Machine Learning</h3>
-              <p class="timeline-company">Chandigarh University, Mohali, PB</p>
-              <p class="timeline-period">2023 – 2026 · Pursuing</p>
-              <ul class="timeline-list">
-                <li>Deep learning, NLP, Spatial-Temporal Modeling, Multimodal Data Fusion</li>
-                <li>Authored 2 IEEE-submitted research papers on crop yield prediction</li>
-                <li>ClimYieldNet: ResCNNs + TCNs + Attention Bi-LSTMs achieving 6.38 q/ha RMSE</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="ttag">Python</span><span class="ttag">Deep Learning</span><span class="ttag">IEEE Research</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal-right">
-            <div class="timeline-dot">🎓</div>
-            <div class="timeline-card">
-              <span class="timeline-type education">Education</span>
-              <h3>B.Eng – Computer Science & Engineering</h3>
-              <p class="timeline-company">Chandigarh University, Mohali, PB</p>
-              <p class="timeline-period">2019 – 2023 · Completed</p>
-              <ul class="timeline-list">
-                <li>Core CS fundamentals: DSA, OS, DBMS, Computer Networks</li>
-                <li>Developed full-stack projects and accident detection system during degree</li>
-              </ul>
-              <div class="timeline-tags">
-                <span class="ttag">C++</span><span class="ttag">Java</span><span class="ttag">Web Dev</span><span class="ttag">DSA</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certifications -->
-          <div class="timeline-item reveal-left">
-            <div class="timeline-dot">🏆</div>
-            <div class="timeline-card">
-              <span class="timeline-type cert">Certifications</span>
-              <h3>Coursera Certifications</h3>
-              <p class="timeline-company">Coursera · Online</p>
-              <div class="cert-list">
-                <div class="cert-item">
-                  <span class="cert-icon">✅</span>
-                  <div><div class="cert-name">Build Your First React Website</div><div class="cert-code">ID: DKJFAQEM2WBN</div></div>
+        <!-- Certifications -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot">🏆</div>
+          <div class="timeline-card">
+            <span class="timeline-type cert">Certifications</span>
+            <h3>Coursera Certifications</h3>
+            <p class="timeline-company">Coursera · Online</p>
+            <div class="cert-list">
+              <div class="cert-item">
+                <span class="cert-icon">✅</span>
+                <div>
+                  <div class="cert-name">Build Your First React Website</div>
+                  <div class="cert-code">ID: DKJFAQEM2WBN</div>
                 </div>
-                <div class="cert-item">
-                  <span class="cert-icon">✅</span>
-                  <div><div class="cert-name">Crash Course on Python</div><div class="cert-code">ID: YLTTHUYLSSQN</div></div>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">✅</span>
+                <div>
+                  <div class="cert-name">Crash Course on Python</div>
+                  <div class="cert-code">ID: YLTTHUYLSSQN</div>
                 </div>
-                <div class="cert-item">
-                  <span class="cert-icon">✅</span>
-                  <div><div class="cert-name">Programming for Everybody – Python</div><div class="cert-code">ID: S2ZKGBKXBD5U</div></div>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">✅</span>
+                <div>
+                  <div class="cert-name">Programming for Everybody – Python</div>
+                  <div class="cert-code">ID: S2ZKGBKXBD5U</div>
                 </div>
-                <div class="cert-item">
-                  <span class="cert-icon">✅</span>
-                  <div><div class="cert-name">Cybersecurity Roles, Processes & OS Security</div><div class="cert-code">ID: HT5C3A49UY99</div></div>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">✅</span>
+                <div>
+                  <div class="cert-name">Cybersecurity Roles, Processes & OS Security</div>
+                  <div class="cert-code">ID: HT5C3A49UY99</div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ── SECTION 5: PROJECTS ── -->
-    <section id="projects" class="journey-section section-projects">
-      <div class="section-overlay"></div>
-      <div class="section-content reveal-up">
-        <div class="location-tag"><span class="location-dot"></span>📍 The Destination — Real Projects</div>
-        <h2 class="section-heading">Featured <span class="gradient-text">Projects</span></h2>
-        <p class="section-sub">Production-grade apps & IEEE-level research — built with purpose.</p>
+  <!-- ── SECTION 5: PROJECTS ── -->
+  <section id="projects" class="journey-section section-projects">
+    <div class="section-overlay"></div>
+    <div class="section-content reveal-up">
+      <div class="location-tag"><span class="location-dot"></span>📍 The Destination — Real Projects</div>
+      <h2 class="section-heading">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">Production-grade apps & IEEE-level research — built with purpose.</p>
 
-        <div class="projects-grid">
+      <div class="projects-grid">
 
-          <div class="project-card featured" data-index="0">
-            <div class="project-glow"></div>
-            <div class="project-badge">⭐ IEEE Submitted</div>
-            <div class="project-header">
-              <span class="project-icon">🌦️</span>
-              <div class="project-links"><a href="https://linkedin.com/in/mahender" target="_blank" class="proj-link">View →</a></div>
-            </div>
-            <h3 class="project-title">ClimYieldNet – Climate-Resilient AI</h3>
-            <p class="project-desc">Engineered a multimodal deep learning architecture combining ResCNNs, TCNs, and Attention Bi-LSTMs to forecast crop yields under extreme weather. Achieved an exceptional <strong>6.38 q/ha RMSE</strong>. Pioneered ethical AI through differential privacy and epistemic uncertainty quantification. IEEE paper accepted.</p>
-            <div class="project-tech"><span>Python</span><span>Spatial-Temporal DL</span><span>Data Fusion</span><span>Differential Privacy</span></div>
+        <div class="project-card featured" data-index="0">
+          <div class="project-glow"></div>
+          <div class="project-badge">⭐ IEEE Submitted</div>
+          <div class="project-header">
+            <span class="project-icon">🌦️</span>
+            <div class="project-links"><a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank"
+                class="proj-link">View →</a></div>
           </div>
-
-          <div class="project-card featured" data-index="1">
-            <div class="project-glow"></div>
-            <div class="project-badge">🌐 Live Product</div>
-            <div class="project-header">
-              <span class="project-icon">🏠</span>
-              <div class="project-links"><a href="https://rentmyextras.shop/" target="_blank" class="proj-link">Live →</a></div>
-            </div>
-            <h3 class="project-title">RentMyExtras – P2P Marketplace</h3>
-            <p class="project-desc">Founded and engineered a full peer-to-peer equipment rental platform. Scalable MERN-stack architecture deployed to handle real user-to-user transactions for high-value gear. Manages full development lifecycle across web and mobile platforms.</p>
-            <div class="project-tech"><span>Next.js</span><span>Firebase</span><span>MERN Stack</span><span>Mobile</span></div>
-          </div>
-
-          <div class="project-card" data-index="2">
-            <div class="project-glow"></div>
-            <div class="project-header">
-              <span class="project-icon">🌾</span>
-              <div class="project-links"><a href="https://linkedin.com/in/mahender" target="_blank" class="proj-link">View →</a></div>
-            </div>
-            <h3 class="project-title">Hybrid ML Crop Yield Predictor</h3>
-            <p class="project-desc">Engineered an optimized 21-layer deep neural network and evaluated ensemble algorithms (Random Forest) on extensive agricultural datasets — achieving <strong>11% RMSE</strong>. Research paper proposes a hybrid methodology bridging mechanistic crop simulations with ML.</p>
-            <div class="project-tech"><span>Python</span><span>Deep Learning</span><span>Random Forest</span><span>Jupyter</span></div>
-          </div>
-
-          <div class="project-card" data-index="3">
-            <div class="project-glow"></div>
-            <div class="project-header">
-              <span class="project-icon">🤖</span>
-              <div class="project-links"><a href="https://linkedin.com/in/mahender" target="_blank" class="proj-link">View →</a></div>
-            </div>
-            <h3 class="project-title">Tech Contributor – LeadTailor (AI B2B)</h3>
-            <p class="project-desc">Contributed to an AI-driven B2B SaaS platform, implementing modern technologies including SQL, Prisma, Next.js, and AWS. Supported scalable architecture powering AI-driven lead generation and CRM workflows.</p>
-            <div class="project-tech"><span>Next.js</span><span>Prisma</span><span>AWS</span><span>SQL</span><span>Stripe</span></div>
-          </div>
-
-          <div class="project-card" data-index="4">
-            <div class="project-glow"></div>
-            <div class="project-header">
-              <span class="project-icon">🚨</span>
-              <div class="project-links"><a href="https://linkedin.com/in/mahender" target="_blank" class="proj-link">View →</a></div>
-            </div>
-            <h3 class="project-title">Accident Detection Application</h3>
-            <p class="project-desc">Built a real-time accident detection system using Python and Android Studio with Firebase backend. Focused on safety automation and quick emergency response using computer vision algorithms.</p>
-            <div class="project-tech"><span>Python</span><span>Android Studio</span><span>Firebase</span><span>Algorithms</span></div>
-          </div>
-
-          <div class="project-card" data-index="5">
-            <div class="project-glow"></div>
-            <div class="project-header">
-              <span class="project-icon">🌾</span>
-              <div class="project-links"><a href="https://linkedin.com/in/mahender" target="_blank" class="proj-link">View →</a></div>
-            </div>
-            <h3 class="project-title">Crop Yield Prediction using ML</h3>
-            <p class="project-desc">Developed a machine learning model to accurately predict crop yield using Python and Jupyter Notebook for data analysis and visualization. Containerized with Docker for reproducible deployment.</p>
-            <div class="project-tech"><span>Python</span><span>React</span><span>Jupyter</span><span>Docker</span></div>
-          </div>
-
+          <h3 class="project-title">ClimYieldNet – Climate-Resilient AI</h3>
+          <p class="project-desc">Engineered a multimodal deep learning architecture combining ResCNNs, TCNs, and
+            Attention Bi-LSTMs to forecast crop yields under extreme weather. Achieved an exceptional <strong>4.19 q/ha
+              RMSE</strong>. Pioneered ethical AI through differential privacy and epistemic uncertainty quantification.
+            IEEE paper accepted.</p>
+          <div class="project-tech"><span>Python</span><span>Spatial-Temporal DL</span><span>Data
+              Fusion</span><span>Differential Privacy</span></div>
         </div>
+
+        <div class="project-card featured" data-index="1">
+          <div class="project-glow"></div>
+          <div class="project-badge">🌐 Live Product</div>
+          <div class="project-header">
+            <span class="project-icon">🏠</span>
+            <div class="project-links"><a href="https://rentmyextras.shop/" target="_blank" class="proj-link">Live →</a>
+            </div>
+          </div>
+          <h3 class="project-title">RentMyExtras – P2P Marketplace</h3>
+          <p class="project-desc">Founded and engineered a full peer-to-peer equipment rental platform. Scalable
+            MERN-stack architecture deployed to handle real user-to-user transactions for high-value gear. Manages full
+            development lifecycle across web and mobile platforms.</p>
+          <div class="project-tech"><span>Next.js</span><span>Firebase</span><span>MERN Stack</span><span>Mobile</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-index="2">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">🌾</span>
+            <div class="project-links"><a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank"
+                class="proj-link">View →</a></div>
+          </div>
+          <h3 class="project-title">Hybrid ML Crop Yield Predictor</h3>
+          <p class="project-desc">Engineered an optimized 21-layer deep neural network and evaluated ensemble algorithms
+            (Random Forest) on extensive agricultural datasets — achieving <strong>11% RMSE</strong>. Research paper
+            proposes a hybrid methodology bridging mechanistic crop simulations with ML.</p>
+          <div class="project-tech"><span>Python</span><span>Deep Learning</span><span>Random
+              Forest</span><span>Jupyter</span></div>
+        </div>
+
+        <div class="project-card" data-index="3">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <div class="project-links"><a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank"
+                class="proj-link">View →</a></div>
+          </div>
+          <h3 class="project-title">Tech Contributor – LeadTailor (AI B2B)</h3>
+          <p class="project-desc">Contributed to an AI-driven B2B SaaS platform, implementing modern technologies
+            including SQL, Prisma, Next.js, and AWS. Supported scalable architecture powering AI-driven lead generation
+            and CRM workflows.</p>
+          <div class="project-tech">
+            <span>Next.js</span><span>Prisma</span><span>AWS</span><span>SQL</span><span>Stripe</span></div>
+        </div>
+
+        <div class="project-card" data-index="4">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">🚨</span>
+            <div class="project-links"><a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank"
+                class="proj-link">View →</a></div>
+          </div>
+          <h3 class="project-title">Accident Detection Application</h3>
+          <p class="project-desc">Built a real-time accident detection system using Python and Android Studio with
+            Firebase backend. Focused on safety automation and quick emergency response using computer vision
+            algorithms.</p>
+          <div class="project-tech"><span>Python</span><span>Android
+              Studio</span><span>Firebase</span><span>Algorithms</span></div>
+        </div>
+
+        <div class="project-card" data-index="5">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <span class="project-icon">🌾</span>
+            <div class="project-links"><a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank"
+                class="proj-link">View →</a></div>
+          </div>
+          <h3 class="project-title">Crop Yield Prediction using ML</h3>
+          <p class="project-desc">Developed a machine learning model to accurately predict crop yield using Python and
+            Jupyter Notebook for data analysis and visualization. Containerized with Docker for reproducible deployment.
+          </p>
+          <div class="project-tech"><span>Python</span><span>React</span><span>Jupyter</span><span>Docker</span></div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ── SECTION 6: CONTACT ── -->
-    <section id="contact" class="journey-section section-contact">
-      <div class="section-overlay"></div>
-      <div class="section-content reveal-up">
-        <div class="location-tag"><span class="location-dot"></span>🏁 Journey Complete — Let's Connect</div>
-        <h2 class="section-heading">Let's Build <span class="gradient-text">Together</span></h2>
-        <p class="section-sub">The road trip is over, but the real journey begins with collaboration.</p>
+  <!-- ── SECTION 6: CONTACT ── -->
+  <section id="contact" class="journey-section section-contact">
+    <div class="section-overlay"></div>
+    <div class="section-content reveal-up">
+      <div class="location-tag"><span class="location-dot"></span>🏁 Journey Complete — Let's Connect</div>
+      <h2 class="section-heading">Let's Build <span class="gradient-text">Together</span></h2>
+      <p class="section-sub">The road trip is over, but the real journey begins with collaboration.</p>
 
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Get In Touch</h3>
-            <p>Open to full-time roles, freelance projects, and research collaborations in AI/ML and Full Stack Development.</p>
-            <div class="contact-items">
-              <a href="mailto:bhambhu27@gmail.com" class="contact-item">
-                <div class="contact-icon">📧</div>
-                <div><div class="ci-label">Email</div><div class="ci-val">bhambhu27@gmail.com</div></div>
-              </a>
-              <a href="tel:+919872687150" class="contact-item">
-                <div class="contact-icon">📞</div>
-                <div><div class="ci-label">Phone</div><div class="ci-val">+91 9872687150</div></div>
-              </a>
-              <a href="https://linkedin.com/in/mahender" target="_blank" class="contact-item">
-                <div class="contact-icon">💼</div>
-                <div><div class="ci-label">LinkedIn</div><div class="ci-val">linkedin.com/in/mahender</div></div>
-              </a>
-              <a href="https://rentmyextras.shop/" target="_blank" class="contact-item">
-                <div class="contact-icon">🌐</div>
-                <div><div class="ci-label">Live Project</div><div class="ci-val">rentmyextras.shop</div></div>
-              </a>
-            </div>
-            <div class="availability-badge"><span class="avail-dot"></span>Available for new opportunities</div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Open to full-time roles, freelance projects, and research collaborations in AI/ML and Full Stack
+            Development.</p>
+          <div class="contact-items">
+            <a href="mailto:bhambhu27@gmail.com" class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-val">bhambhu27@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+919872687150" class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="ci-label">Phone</div>
+                <div class="ci-val">+91 9872687150</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/mahender-bhambhu-146596218/" target="_blank" class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <div class="ci-label">LinkedIn</div>
+                <div class="ci-val">linkedin.com/in/mahender-bhambhu-146596218</div>
+              </div>
+            </a>
+            <a href="https://rentmyextras.shop/" target="_blank" class="contact-item">
+              <div class="contact-icon">🌐</div>
+              <div>
+                <div class="ci-label">Live Project</div>
+                <div class="ci-val">rentmyextras.shop</div>
+              </div>
+            </a>
           </div>
-
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Let's work together" />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
-            </div>
-            <button type="submit" class="btn-submit" id="submitBtn">
-              <span class="btn-text">Send Message 🚀</span>
-              <span class="btn-sending" style="display:none">Sending...</span>
-            </button>
-            <div class="form-success" id="formSuccess" style="display:none">✅ Message sent! I'll get back to you soon.</div>
-          </form>
+          <div class="availability-badge"><span class="avail-dot"></span>Available for new opportunities</div>
         </div>
 
-        <div class="journey-end">
-          <div class="journey-end-car">🚙</div>
-          <div class="journey-end-flag">🏁</div>
-          <p>Thanks for riding with me across India!</p>
-          <p class="journey-end-sub">Kashmir → West Coast → Kanyakumari → North East</p>
-        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Let's work together" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-text">Send Message 🚀</span>
+            <span class="btn-sending" style="display:none">Sending...</span>
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none">✅ WhatsApp opened! Complete sending the message there.
+          </div>
+        </form>
       </div>
-    </section>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+      <div class="journey-end">
+        <div class="journey-end-car">🚙</div>
+        <div class="journey-end-flag">🏁</div>
+        <p>Thanks for riding across my profile!</p>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>

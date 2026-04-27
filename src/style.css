@@ -146,7 +146,7 @@ a{text-decoration:none;color:inherit;}
 .timeline-type.education{background:rgba(236,72,153,.1);color:var(--pink);}
 .timeline-card h3{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:.3rem;}
 .timeline-company{color:var(--indigo);font-size:.9rem;font-weight:600;margin-bottom:.3rem;}
-.timeline-period{color:var(--muted);font-size:.82rem;margin-bottom.8rem;}
+.timeline-period{color:var(--muted);font-size:.82rem;margin-bottom:.8rem;}
 .timeline-list{margin:.8rem 0 1rem 1.2rem;color:var(--muted);font-size:.88rem;line-height:1.7;}
 .timeline-tags{display:flex;flex-wrap:wrap;gap:.4rem;}
 .ttag{background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--muted);padding:.2rem .6rem;border-radius:6px;font-size:.76rem;}

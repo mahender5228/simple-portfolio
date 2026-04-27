@@ -266,24 +266,7 @@ scene.add(snow);
 const sections = ['hero', 'about', 'skills', 'experience', 'projects', 'contact'];
 let currentSection = 0;
 
-// Road progress bar
-const roadFill = document.getElementById('roadFill');
-const roadCarIndicator = document.getElementById('roadCarIndicator');
-const milestoneDivs = document.querySelectorAll('.milestone');
 
-function updateProgress() {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const pct = Math.min(scrollTop / docHeight, 1);
-  roadFill.style.height = (pct * 100) + '%';
-  roadCarIndicator.style.top = (pct * 100) + '%';
-
-  // Milestone highlight
-  const secIdx = Math.min(Math.floor(pct * 4), 3);
-  milestoneDivs.forEach((m, i) => m.classList.toggle('active', i === secIdx));
-  currentSection = Math.floor(pct * sections.length);
-}
-window.addEventListener('scroll', updateProgress);
 
 // ─── CAMERA PATH (scroll-driven) ──────────────────────────
 const camPath = [
@@ -344,20 +327,37 @@ document.querySelectorAll('.bar-fill').forEach(bar => {
   io.observe(bar);
 });
 
-// ─── CONTACT FORM ─────────────────────────────────────────
+// ─── CONTACT FORM → WHATSAPP ──────────────────────────────
 document.getElementById('contactForm')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
+
+  const name    = document.getElementById('name').value.trim();
+  const email   = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  const text = encodeURIComponent(
+    `👋 Hi Mahender!\n\n` +
+    `*Name:* ${name}\n` +
+    `*Email:* ${email}\n` +
+    `*Subject:* ${subject || '(none)'}\n\n` +
+    `*Message:*\n${message}`
+  );
+
+  // Show sending state briefly, then open WhatsApp
   btn.querySelector('.btn-text').style.display = 'none';
   btn.querySelector('.btn-sending').style.display = 'inline';
   btn.disabled = true;
+
   setTimeout(() => {
+    window.open(`https://wa.me/919872687150?text=${text}`, '_blank');
     document.getElementById('formSuccess').style.display = 'block';
     btn.querySelector('.btn-sending').style.display = 'none';
     btn.querySelector('.btn-text').style.display = 'inline';
     btn.disabled = false;
     e.target.reset();
-  }, 1800);
+  }, 800);
 });
 
 // ─── MOUSE PARALLAX ───────────────────────────────────────
